@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دستورالعمل ایمنی و بهداشت (HSE) برای بازدیدکنندگان - گروه صنعتی گچبرگ یزد</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Warm Neutrals -->
+    <!-- Application Structure Plan: A single-page, vertical-scrolling application with a fixed top navigation bar. This structure is chosen for its simplicity and clarity, which is essential for safety instructions. Users can either scroll sequentially through the rules or use the navigation to jump directly to a specific section (Entry, Traffic, PPE, Emergency). This thematic, linear flow is the most effective way to communicate a process-oriented set of guidelines to a visitor who is unfamiliar with the site, ensuring all critical information is presented logically from arrival to potential emergency situations. -->
+    <!-- Visualization & Content Choices: The source material consists of rules and procedures, not quantitative data, so traditional charts are not applicable. Instead, information is "visualized" using structured layouts, icons, and color-coded cards to improve comprehension and retention. Key risks are addressed as follows: 1) Traffic (Forklifts/Trucks): Goal is to warn. Method is a grid of icon-based cards for high visibility. 2) Machinery: Goal is to prevent unauthorized access. Method is a clear "Do Not Enter" style card. 3) Dust/Health: Goal is to mandate protection. Method is a visual grid showcasing required PPE. 4) Emergency: Goal is to ensure correct action. Method is a step-by-step, numbered list in a high-alert colored section. All visual elements are created using HTML and Tailwind CSS. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .rtl {
+            direction: rtl;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-gray-800 rtl">
+
+    <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-lg md:text-xl font-bold text-stone-700">گروه صنعتی گچبرگ یزد</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4 space-x-reverse">
+                        <a href="#intro" class="text-gray-600 hover:bg-stone-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">مقدمه</a>
+                        <a href="#entry" class="text-gray-600 hover:bg-stone-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">۱. ورود و ثبت نام</a>
+                        <a href="#traffic" class="text-gray-600 hover:bg-stone-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">۲. ایمنی تردد</a>
+                        <a href="#ppe" class="text-gray-600 hover:bg-stone-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">۳. بهداشت و PPE</a>
+                        <a href="#emergency" class="text-gray-600 hover:bg-stone-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">۴. شرایط اضطراری</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <select id="mobile-nav" class="bg-stone-100 border border-stone-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                        <option value="#intro">مقدمه</option>
+                        <option value="#entry">ورود و ثبت نام</option>
+                        <option value="#traffic">ایمنی تردد</option>
+                        <option value="#ppe">بهداشت و PPE</option>
+                        <option value="#emergency">شرایط اضطراری</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+
+        <section id="intro" class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">دستورالعمل ایمنی و بهداشت (HSE)</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">برای کلیه بازدیدکنندگان، مهمانان و پیمانکاران محترم در گروه صنعتی گچبرگ یزد. هدف از این دستورالعمل، تضمین سلامت و ایمنی شما در طول مدت حضور در این مجموعه صنعتی است. رعایت دقیق این مقررات الزامی است.</p>
+        </section>
+
+        <!-- Section 1: Entry and Registration -->
+        <section id="entry" class="mb-12 scroll-mt-20">
+            <h3 class="text-2xl font-bold text-stone-800 border-r-4 border-blue-600 pr-4 mb-6">۱. قبل از ورود و شناسایی</h3>
+            <p class="text-gray-600 mb-8">برای ورود به مجموعه، انجام هماهنگی‌های لازم و طی مراحل شناسایی جهت حفظ امنیت و نظم، ضروری است. لطفاً مراحل زیر را با دقت دنبال کنید.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <div class="text-blue-600 text-5xl mb-4 mx-auto w-fit">
+                        <span>📋</span>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2">هماهنگی و ثبت نام</h4>
+                    <p class="text-sm text-gray-600">ورود شما باید از قبل با میزبان هماهنگ شده باشد. در بدو ورود، اطلاعات خود را در دفتر نگهبانی ثبت نمایید.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <div class="text-blue-600 text-5xl mb-4 mx-auto w-fit">
+                        <span>💳</span>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2">ارائه کارت شناسایی</h4>
+                    <p class="text-sm text-gray-600">ارائه کارت شناسایی معتبر (کارت ملی، گواهینامه) به مسئولین حراست جهت احراز هویت الزامی است.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <div class="text-blue-600 text-5xl mb-4 mx-auto w-fit">
+                        <span>🏷️</span>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2">دریافت کارت تردد</h4>
+                    <p class="text-sm text-gray-600">کارت تردد مخصوص مهمان را از نگهبانی دریافت کرده و تا پایان بازدید همراه خود داشته باشید و هنگام خروج تحویل دهید.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Traffic Safety -->
+        <section id="traffic" class="mb-12 scroll-mt-20">
+            <h3 class="text-2xl font-bold text-stone-800 border-r-4 border-amber-500 pr-4 mb-6">۲. ایمنی در تردد</h3>
+            <p class="text-gray-600 mb-8">محیط کارخانه محل تردد ماشین‌آلات سنگین مانند لیفتراک و کامیون است. بی‌توجهی به علائم و مسیرها می‌تواند حوادث جبران‌ناپذیری به همراه داشته باشد.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-green-500">
+                    <div class="flex items-center mb-3">
+                        <span class="text-3xl mr-3">🚶‍♂️</span>
+                        <h4 class="text-lg font-semibold">همراهی میزبان</h4>
+                    </div>
+                    <p class="text-sm text-gray-600">تردد در محوطه کارخانه فقط با همراهی میزبان مجاز است. هرگز به تنهایی در محیط تردد نکنید.</p>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-green-500">
+                    <div class="flex items-center mb-3">
+                        <span class="text-3xl mr-3">↔️</span>
+                        <h4 class="text-lg font-semibold">مسیرهای عابر پیاده</h4>
+                    </div>
+                    <p class="text-sm text-gray-600">همواره از مسیرهای خط‌کشی شده و مشخص شده برای عابران پیاده استفاده کنید.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-red-500">
+                    <div class="flex items-center mb-3">
+                        <span class="text-3xl mr-3">🚚</span>
+                        <h4 class="text-lg font-semibold">خطر لیفتراک و کامیون</h4>
+                    </div>
+                    <p class="text-sm text-gray-600">مراقب تردد لیفتراک‌ها و ماشین‌آلات سنگین باشید. حق تقدم همواره با آنهاست. از راننده تماس چشمی بگیرید.</p>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-red-500">
+                    <div class="flex items-center mb-3">
+                         <span class="text-3xl mr-3">🚫</span>
+                        <h4 class="text-lg font-semibold">مناطق عملیاتی ممنوع</h4>
+                    </div>
+                    <p class="text-sm text-gray-600">ورود به محوطه خطوط تولید، انبارها و هرگونه منطقه عملیاتی بدون کسب مجوز اکیداً ممنوع است.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-amber-500">
+                    <div class="flex items-center mb-3">
+                        <span class="text-3xl mr-3">📱</span>
+                        <h4 class="text-lg font-semibold">عدم استفاده از موبایل</h4>
+                    </div>
+                    <p class="text-sm text-gray-600">هنگام راه رفتن از استفاده از تلفن همراه که موجب حواس‌پرتی می‌شود، خودداری کنید.</p>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-amber-500">
+                    <div class="flex items-center mb-3">
+                        <span class="text-3xl mr-3">🎧</span>
+                        <h4 class="text-lg font-semibold">عدم استفاده از هندزفری</h4>
+                    </div>
+                    <p class="text-sm text-gray-600">استفاده از هدفون یا هندزفری به دلیل نشنیدن صدای بوق و آژیر خطر ماشین‌آلات، ممنوع است.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Health and PPE -->
+        <section id="ppe" class="mb-12 scroll-mt-20">
+            <h3 class="text-2xl font-bold text-stone-800 border-r-4 border-green-600 pr-4 mb-6">۳. بهداشت و تجهیزات حفاظت فردی (PPE)</h3>
+            <p class="text-gray-600 mb-8">حفاظت از سلامت شما در برابر مخاطرات محیطی مانند گرد و غبار و اجسام در حال سقوط، اولویت اصلی ماست. استفاده از تجهیزات زیر در صورت ورود به سالن‌های تولید الزامی است.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+                <div class="bg-white text-center p-4 rounded-lg shadow-md border border-gray-200">
+                    <div class="text-5xl mb-3">👷</div>
+                    <p class="font-semibold">کلاه ایمنی</p>
+                </div>
+                <div class="bg-white text-center p-4 rounded-lg shadow-md border border-gray-200">
+                    <div class="text-5xl mb-3">🥾</div>
+                    <p class="font-semibold">کفش ایمنی</p>
+                </div>
+                <div class="bg-white text-center p-4 rounded-lg shadow-md border border-gray-200">
+                    <div class="text-5xl mb-3">🦺</div>
+                    <p class="font-semibold">جلیقه شبرنگ</p>
+                </div>
+                <div class="bg-white text-center p-4 rounded-lg shadow-md border border-gray-200">
+                    <div class="text-5xl mb-3">😷</div>
+                    <p class="font-semibold">ماسک تنفسی</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-red-50 border-r-4 border-red-600 p-6 rounded-lg">
+                    <h4 class="text-lg font-bold text-red-800 mb-2"> استعمال دخانیات مطلقاً ممنوع</h4>
+                    <p class="text-red-700">به دلیل وجود مواد قابل اشتعال و گرد و غبار، کشیدن سیگار و هرگونه دخانیات در تمامی فضاهای سرپوشیده و محوطه کارخانه اکیداً ممنوع است.</p>
+                </div>
+                 <div class="bg-blue-50 border-r-4 border-blue-600 p-6 rounded-lg">
+                    <h4 class="text-lg font-bold text-blue-800 mb-2">رعایت بهداشت و نظافت</h4>
+                    <p class="text-blue-700">از ریختن زباله در محیط خودداری کرده و در حفظ پاکیزگی و نظم مجموعه کوشا باشید. قبل از مصرف خوراکی و آشامیدنی، دستان خود را بشویید.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Emergency -->
+        <section id="emergency" class="scroll-mt-20">
+            <h3 class="text-2xl font-bold text-stone-800 border-r-4 border-red-600 pr-4 mb-6">۴. شرایط اضطراری</h3>
+            <p class="text-gray-600 mb-8">آرامش خود را حفظ کنید و پروتکل‌های زیر را در مواقع اضطراری مانند آتش‌سوزی یا نیاز به تخلیه فوری، به دقت اجرا نمایید.</p>
+            <div class="bg-white border-2 border-red-300 rounded-lg p-6 shadow-lg">
+                <ol class="list-decimal list-inside space-y-4 text-gray-700">
+                    <li><span class="font-semibold">حفظ خونسردی:</span> در صورت شنیدن آژیر خطر، خونسردی خود را حفظ کرده و از دویدن بپرهیزید.</li>
+                    <li><span class="font-semibold">توقف کار:</span> هرگونه فعالیت را فوراً متوقف کرده و به دستورات مسئولین ایمنی یا میزبان خود توجه کنید.</li>
+                    <li><span class="font-semibold">مسیرهای خروج:</span> از نزدیک‌ترین مسیر تخلیه اضطراری که با تابلوهای سبز رنگ مشخص شده، محل را ترک کنید. هرگز از آسانسور استفاده نکنید.</li>
+                    <li><span class="font-semibold">نقطه تجمع امن:</span> به سمت "نقطه تجمع امن" (Assembly Point) که در محوطه باز و با تابلو مشخص شده است، حرکت کنید.</li>
+                    <li><span class="font-semibold">حضور و غیاب:</span> تا زمان اعلام وضعیت عادی و اجازه مسئول ایمنی، در نقطه تجمع باقی بمانید تا حضور و غیاب انجام شود.</li>
+                </ol>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-stone-800 text-white mt-16">
+        <div class="container mx-auto py-4 px-5 text-center">
+            <p class="text-sm">ایمنی شما، اولویت ماست. با تشکر از همکاری شما.</p>
+            <p class="text-xs text-stone-400 mt-1">&copy; ۱۴۰۴ - کلیه حقوق برای گروه صنعتی گچبرگ یزد محفوظ است.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileNav = document.getElementById('mobile-nav');
+            if (mobileNav) {
+                mobileNav.addEventListener('change', (event) => {
+                    const targetId = event.target.value;
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            }
+
+            const desktopNavLinks = document.querySelectorAll('nav a[href^="#"]');
+            desktopNavLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
